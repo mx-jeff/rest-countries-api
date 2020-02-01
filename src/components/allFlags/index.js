@@ -28,58 +28,11 @@ export default function AllFlags(){
                         <h3>{country.name}</h3>
                         
                         <p><strong>Region: </strong>{country.region}</p>
+                        <p><strong>Population: </strong>{country.population}</p>
                         <p><strong>Capital: </strong>{country.capital}</p>
                     </div>
                 </div>
             ))}
         </div>
-
-        /*
-        <div className="flag-container">
-            <div className="flag">
-                <img src="https://restcountries.eu/data/afg.svg" alt=""/>
-
-                <div className="info">
-                    <h3>Afeganistão</h3>
-                    
-                    <p><strong>Region: </strong>Asia</p>
-                    <p><strong>Capital: </strong>Kabul</p>
-                </div>
-            </div>
-
-            <div className="flag">
-                <img src="https://restcountries.eu/data/afg.svg" alt=""/>
-
-                <div className="info">
-                    <h3>Afeganistão</h3>
-                    
-                    <p><strong>Region: </strong>Asia</p>
-                    <p><strong>Capital: </strong>Kabul</p>
-                </div>
-            </div>
-
-            <div className="flag">
-                <img src="https://restcountries.eu/data/afg.svg" alt=""/>
-
-                <div className="info">
-                    <h3>Afeganistão</h3>
-                    
-                    <p><strong>Region: </strong>Asia</p>
-                    <p><strong>Capital: </strong>Kabul</p>
-                </div>
-            </div>
-
-            <div className="flag">
-                <img src="https://restcountries.eu/data/afg.svg" alt=""/>
-
-                <div className="info">
-                    <h3>Afeganistão</h3>
-                    
-                    <p><strong>Region: </strong>Asia</p>
-                    <p><strong>Capital: </strong>Kabul</p>
-                </div>
-            </div>
-        </div>
-        */
     )
 }
