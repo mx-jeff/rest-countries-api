@@ -1,3 +1,42 @@
+:root{
+    --border-light-color: #F0F0F0;
+    --shadow-light-color: rgba(117, 117, 117, 0.158);
+
+    --box-height: 8vh;
+    --box-witdh: 12vw;
+}
+
+.options {
+    display: flex;
+    margin: 50px 100px;
+    justify-content: space-between;
+}
+
+.options input.box {
+    padding: 5px 20px !important;
+    width: 30vw;
+    height: var(--box-height);
+}
+
+.options select.box {
+    width: var(--box-witdh);
+    height: var(--box-height);
+}
+
+.options select.box option{
+    background-color: white;
+}
+
+.options .box{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--border-light-color);
+    box-shadow: 1px 1px 5px var(--shadow-light-color);
+}
+
+
+/*Flag*/
 .flag-container {
     display: flex;
     width: 90%;
@@ -9,7 +48,7 @@
 }
 
 .flag-container .flag{
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.301);
+    box-shadow: 1px 1px 5px var(--shadow-light-color);
     margin: 0 20px 100px;
     border-radius:5px;
     width: 250px;
@@ -35,3 +74,4 @@
 .flag-container .flag .info p{
     margin-bottom: 10px;
 }
+
