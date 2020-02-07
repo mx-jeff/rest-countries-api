@@ -1,0 +1,14 @@
+.flag-detail-container {
+    padding: 50px 100px;
+}
+
+.flag-image {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 1em;
+}
+
+.flag-detail {
+    width: 50vw;
+    height: 50vh;
+}
