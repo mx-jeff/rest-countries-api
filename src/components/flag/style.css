@@ -1,14 +1,43 @@
 .flag-detail-container {
     padding: 50px 100px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .flag-image {
-    width: 50vw;
     height: 50vh;
     border-radius: 1em;
 }
 
 .flag-detail {
+    padding: 10px 50px;
     width: 50vw;
     height: 50vh;
+    font-size: 20px;
+    
+}
+
+.flag-detail p {
+    line-height: 30px;
+}
+
+.flag-detail-info {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.411);
+    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.411);
+    border-radius: 5px;
+    
+    width: 12%;
+    margin: 5px;
+    padding: 5px 0; 
 }
