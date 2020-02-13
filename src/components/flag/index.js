@@ -3,17 +3,19 @@ import './style.css'
 
 import api from '../../services/api'
 
-export default function FlagDetails(){
+export default function FlagDetails(props){
     const[detailFlag, setDetailFlag] = useState([])
 
     useEffect(() => {
-        async function loadFlag(name='brazil'){
+        async function loadFlag(){
+            const { name } = props.match.params
+
             const response = await api.get(`/name/${name}`)
             setDetailFlag(response.data)
         }
 
         loadFlag()
-    }, [])
+    }, [props.match.params])
 
     console.log(detailFlag)
 
