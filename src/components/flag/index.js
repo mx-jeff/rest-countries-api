@@ -2,6 +2,7 @@ import React,{ useEffect, useState } from 'react'
 import './style.css'
 import { Link } from 'react-router-dom'
 
+import { MdKeyboardBackspace } from 'react-icons/md'
 import api from '../../services/api'
 
 export default function FlagDetails(props){
@@ -18,12 +19,11 @@ export default function FlagDetails(props){
         loadFlag()
     }, [props.match.params])
 
-    console.log(detailFlag)
-
     return (
         <>
             <Link to='/'>
                 <button className="btn full">
+                    <MdKeyboardBackspace className="icon" />
                     Voltar
                 </button>
             </Link>

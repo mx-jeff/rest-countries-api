@@ -6,6 +6,8 @@
     --box-witdh: 12vw;
 }
 
+/*Options bar*/
+
 .options {
     display: flex;
     margin: 50px 100px;
@@ -35,6 +37,25 @@
     box-shadow: 1px 1px 5px var(--shadow-light-color);
 }
 
+@media(max-width: 720px){    
+    .options {
+        display: flex;
+        margin: 50px;
+        flex-direction: column;
+    }
+
+    .options input.box {
+        padding: 5px 20px !important;
+        width: 80vw;
+        height: var(--box-height);
+        margin-bottom: 20px;
+    }
+    
+    .options select.box {
+        width: 50vw;
+        height: var(--box-height);
+    }
+}
 
 /*Flag*/
 .flag-container {
