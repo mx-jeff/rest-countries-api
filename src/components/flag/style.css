@@ -37,7 +37,12 @@
     box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.411);
     border-radius: 5px;
     
-    width: 12%;
+    width: 10%;
     margin: 5px;
     padding: 5px 0; 
+}
+
+.full {
+    margin: 40px 0 0 100px;
+    cursor: pointer;
 }

@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Router from './routes'
 import Header from './components/header'
 
-import './app.css'
+import './App.css'
 
 function App() {
+
+  useEffect(() => {
+    document.title = 'Countries Api'
+  }, [])
 
   return (
     <div className="app">

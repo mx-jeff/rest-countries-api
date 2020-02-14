@@ -1,5 +1,6 @@
 import React,{ useEffect, useState } from 'react'
 import './style.css'
+import { Link } from 'react-router-dom'
 
 import api from '../../services/api'
 
@@ -21,6 +22,11 @@ export default function FlagDetails(props){
 
     return (
         <>
+            <Link to='/'>
+                <button className="btn full">
+                    Voltar
+                </button>
+            </Link>
             {detailFlag.map(flag => (
                 <div className="flag-detail-container" key={flag.name}>
                     <img src={flag.flag} className="flag-image" alt={flag.name}/>
@@ -31,7 +37,7 @@ export default function FlagDetails(props){
                         <div className="flag-detail-info">
                             <div>
                                 <p><strong>Native name: </strong> {flag.nativeName}</p>
-                                <p><strong>Population: </strong> {flag.population}</p>
+                                <p><strong>Population: </strong> {flag.population.toLocaleString('pt-BR')}</p>
                                 <p><strong>Region: </strong>{flag.region} </p>
                                 <p><strong>Subregion: </strong>{flag.subregion}</p>
                                 <p><strong>Capital: </strong>{flag.capital}</p>
