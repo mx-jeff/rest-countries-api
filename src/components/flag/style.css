@@ -55,44 +55,51 @@
     }
 }
 
-.flag-detail-container {
-    padding: 50px 50px;
+@media(max-width: 960px){
+    .flag-detail-container {
+        padding: 50px 50px;
+        
+    }
     
-}
+    .flag-detail-container div {
+        margin-top: 25px;
+    }
 
-.flag-detail-container div {
-    margin-top: 25px;
-}
-
-.flag-image {
-    width: 75vw;
-    height: 30vh;
-    border-radius: 1em;
-}
-
-.btn {
-    display: inline-block;
-    text-align: center;
-    font-size: 16px;
-
-    background-color: white;
-    border: 1px solid rgba(128, 128, 128, 0.411);
-    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.411);
-    border-radius: 5px;
+    .flag-detail p, strong {
+        line-height: 40px;
+        font-size: 15pt;
+    }
     
-    width: 20%;
+    .flag-image {
+        width: 75vw;
+        height: 30vh;
+        border-radius: 1em;
+    }
     
-    padding: 5px 0; 
-}
-
-.full {
-    margin: 40px 0 0 100px;
-    cursor: pointer;
-}
-
-.full .icon{
-    background-color: white;
-    position: relative;
-    top: 2px;
-    right: 10px;
+    .btn {
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+    
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.411);
+        box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.411);
+        border-radius: 5px;
+        
+        width: 20%;
+        
+        padding: 5px 0; 
+    }
+    
+    .full {
+        margin: 40px 0 0 100px;
+        cursor: pointer;
+    }
+    
+    .full .icon{
+        background-color: white;
+        position: relative;
+        top: 2px;
+        right: 10px;
+    }    
 }
