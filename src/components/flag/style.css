@@ -1,3 +1,5 @@
+@import '../../globals.css';
+
 @media(min-width: 960px){
     .flag-detail-container {
         padding: 50px 100px;
@@ -32,9 +34,9 @@
         text-align: center;
         font-size: 16px;
     
-        background-color: white;
-        border: 1px solid rgba(128, 128, 128, 0.411);
-        box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.411);
+        background-color: var(--bg-white);
+        border: 1px solid var(--shadow-border);
+        box-shadow: 1px 1px 1px var(--shadow-border);
         border-radius: 5px;
         
         width: 10%;
@@ -48,7 +50,7 @@
     }
     
     .full .icon{
-        background-color: white;
+        background-color: var(--bg-white);
         position: relative;
         top: 2px;
         right: 10px;
@@ -81,9 +83,9 @@
         text-align: center;
         font-size: 16px;
     
-        background-color: white;
-        border: 1px solid rgba(128, 128, 128, 0.411);
-        box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.411);
+        background-color: var(--bg-white);
+        border: 1px solid var(--shadow-border);
+        box-shadow: 1px 1px 1px var(--shadow-border);
         border-radius: 5px;
         
         width: 20%;
@@ -97,7 +99,7 @@
     }
     
     .full .icon{
-        background-color: white;
+        background-color: var(--bg-white);
         position: relative;
         top: 2px;
         right: 10px;

@@ -1,7 +1,6 @@
-:root{
-    --border-light-color: #F0F0F0;
-    --shadow-light-color: rgba(117, 117, 117, 0.158);
+@import '../../globals.css';
 
+:root{
     --box-height: 8vh;
     --box-witdh: 12vw;
 }
@@ -26,15 +25,15 @@
 }
 
 .options select.box option{
-    background-color: white;
+    background-color: var(--bg-white);
 }
 
 .options .box{
     padding: 5px 10px;
-    background-color: white;
+    background-color: var(--bg-white);
     border-radius: 10px;
-    border: 1px solid var(--border-light-color);
-    box-shadow: 1px 1px 5px var(--shadow-light-color);
+    border: 1px solid var(--shadow-border);
+    box-shadow: 1px 1px 5px var(--shadow-border);
 }
 
 @media(max-width: 720px){    
@@ -69,7 +68,7 @@
 }
 
 .flag-container .flag{
-    box-shadow: 1px 1px 5px var(--shadow-light-color);
+    box-shadow: 1px 1px 5px var(--shadow-border);
     margin: 0 20px 100px;
     border-radius:5px;
     width: 250px;

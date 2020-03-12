@@ -1,9 +1,12 @@
+@import '../../globals.css';
+
 header {
     padding: 30px 100px;
-    background: white;
+    background: var(--bg-white);
     border-bottom: 3px solid #F0F0F0;
 }
 
 header h1 {
-    background: white;
+    background: var(--bg-white);
+    color: var(--color-text);
 }

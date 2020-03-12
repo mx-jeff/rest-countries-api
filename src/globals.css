@@ -1,0 +1,13 @@
+.dark{
+    --bg-white: black;
+    --bg-light: rgb(10,10,10);
+    --color-text: white;
+}
+
+.light {
+    --bg-white: white;
+    --bg-light: #F0F0F0;
+    --bg: #FAFAFA;
+    --color-text: black;
+    --shadow-border:  rgba(117, 117, 117, 0.158);
+}
