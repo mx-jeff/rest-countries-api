@@ -1,7 +1,9 @@
 .dark{
-    --bg-white: black;
+    --bg-white: #2B3743;
     --bg-light: rgb(10,10,10);
     --color-text: white;
+    --bg: #202D36;
+    --shadow-border: rgba(117, 117, 117, 0.158);
 }
 
 .light {

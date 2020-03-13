@@ -12,4 +12,5 @@
     box-sizing: border-box;
     background-color: var(--bg);
     font-family: var(--arial);
+    color: var(--color-text);
 }

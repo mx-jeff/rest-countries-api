@@ -3,11 +3,11 @@ import React from 'react';
 import Router from './routes'
 import Header from './components/header'
 
-import './app.css'
+import './App.css'
 
 function App() {
   return (
-    <div className="app light">
+    <div className="app dark">
       <Header />
       <Router />
     </div>

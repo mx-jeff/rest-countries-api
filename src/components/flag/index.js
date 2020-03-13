@@ -21,12 +21,14 @@ export default function FlagDetails(props){
 
     return (
         <>
-            <Link to='/'>
-                <button className="btn full">
-                    <MdKeyboardBackspace className="icon" />
-                    Voltar
-                </button>
-            </Link>
+            <div className="link-container">
+                <Link to='/'>
+                    <button className="btn full">
+                        <MdKeyboardBackspace className="icon" />
+                        Voltar
+                    </button>
+                </Link>
+            </div>
             {detailFlag.map(flag => (
                 <div className="flag-detail-container" key={flag.name}>
                     <img src={flag.flag} className="flag-image" alt={flag.name}/>
@@ -45,8 +47,18 @@ export default function FlagDetails(props){
         
                             <div>
                                 <p><strong>Top level domain: </strong> {flag.topLevelDomain} </p>
-                                <p><strong>Currencies: </strong> {flag.currencies.map(currency => currency.name)}</p>
-                                <p><strong>Languagues: </strong> {flag.languages.map(language => language.name)}</p>
+                                <p>
+                                    <strong>Currencies: </strong> 
+                                    {flag.currencies.map(currency => (
+                                        <span key={currency.name}>{currency.name}</span>
+                                    ))}
+                                </p>
+                                <p>
+                                    <strong>Languagues: </strong> 
+                                    {flag.languages.map(language => (
+                                        <span key={language.name}>{language.name}</span>
+                                    ))}
+                                </p>
                             </div>
                         </div>
         

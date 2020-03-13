@@ -5,6 +5,8 @@
         padding: 50px 100px;
         display: flex;
         justify-content: space-around;
+        min-height: 73.8vh;
+        background-color: var(--bg);
     }
     
     .flag-image {
@@ -16,17 +18,28 @@
         padding: 10px 50px;
         width: 50vw;
         height: 50vh;
-        font-size: 20px;    
+        font-size: 20px;
+        background-color: var(--bg);    
     }
     
     .flag-detail p {
+        background-color: var(--bg);
         line-height: 30px;
     }
     
     .flag-detail-info {
+        background-color: var(--bg);
         margin: 30px 0;
         display: flex;
         justify-content: space-between;
+    }
+
+    .flag-detail h2, p, strong, span, nav, div{
+        background-color: var(--bg);
+    }
+
+    .link-container {
+        background-color: var(--bg);
     }
     
     .btn {
@@ -45,6 +58,7 @@
     }
     
     .full {
+        background-color: var(--bg-white);
         margin: 40px 0 0 100px;
         cursor: pointer;
     }

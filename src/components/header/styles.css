@@ -3,7 +3,7 @@
 header {
     padding: 30px 100px;
     background: var(--bg-white);
-    border-bottom: 3px solid #F0F0F0;
+    border-bottom: 3px solid var(--shadow-border);
 }
 
 header h1 {
