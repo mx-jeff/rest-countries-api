@@ -4,9 +4,27 @@ header {
     padding: 30px 100px;
     background: var(--bg-white);
     border-bottom: 3px solid var(--shadow-border);
+    display: flex;
+    justify-content: space-between;
 }
 
 header h1 {
     background: var(--bg-white);
     color: var(--color-text);
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+
+    background-color: var(--bg-white);
+    border: 1px solid var(--shadow-border);
+    box-shadow: 1px 1px 1px var(--shadow-border);
+    border-radius: 5px;
+    
+    width: 10%;
+    margin: 5px;
+    padding: 5px 0; 
+    cursor: pointer;
 }
